@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+body {
+  color: #8e7757;
+  background-color: #fff;
+}
+a {
+    color: inherit;
+    background-color: transparent;
+}
+
+.menu-container {
+  max-width: 1220px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    padding: 10px 0 0;
+  }
+}
+
+/*ページトップの画像　開始*/
+
+.menu-page-head{
+  opacity: 0.5;
+  position: relative;
+  
+}
+.menu-page-head-img{
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.menu-page-head h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #2b0000;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .menu-page-head h2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    color: #2b0000;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+.menu-page-head span {
+  display: block;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  padding-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .menu-page-head span {
+  display: block;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  padding-top: 70px;
+}
+}
+
+.menu-page-head h2 smal {
+  font-family: "Noto Sans CJK JP Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-page-head span {
+    font-size: 26px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-page-head small {
+    font-size: 22px;
+  }
+}
+
+/*ページトップの画像　終了*/
+
+/*パーマメニュー*/
+
+.section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.menu {
+  padding: 20px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    padding: 0;
+  }
+}
+
+.inner--sm {
+  max-width: 760px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*メニューのタイトル部分　開始*/
+.inner.inner--sm.inner-padding--lg h3 {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 600;
+  display: block;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+  .inner.inner--sm.inner-padding--lg h3 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner-padding--lg {
+    padding: 0 30px;
+  }
+}
+/*メニューのタイトル部分　終了*/
+
+/*メニューのコメント部分　開始*/
+.recommend-ttl {
+  font-size: 25px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .recommend-ttl {
+    font-size: 18px;
+    margin-top: 1em;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+/*メニューのコメント部分　終了*/
+.recommend-ttl-2 {
+  font-size: 20px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*パーマ金額テーブル*/
+
+.table {
+  border-top: 1px solid #ab939d;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+.item {
+  padding: 30px 10px;
+  line-height: 1.4;
+  border-bottom: 1px solid #ab939d;
+  list-style-type: none;
+  margin: 0;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    padding: 20px 10px;
+  }
+}
+
+.c-flex-column-half {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .c-flex-column-half {
+    display: block;
+    width: 100%;
+  }
+}
+
+.c-flex-column--item.left {
+  flex: 1;
+}
+
+.item-name {
+  margin: 0;
+  font-size: 20px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #2b0000;
+}
+
+@media screen and (max-width: 768px) {
+  .item-name {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+}
+
+.item-detail {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 14px;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #2b0000;
+}
+
+@media screen and (max-width: 768px) {
+  .item-detail {
+    font-size: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+.c-flex-column--item.right {
+  flex-basis: 200px;
+  text-align: right;
+}
+
+.right.c-flex-column--item {
+  flex-basis: 200px;
+  text-align: right;
+}
+
+.item-price {
+  margin: 0;
+  line-height: 1;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #2b0000;
+}
+@media screen and (max-width: 768px) {
+  .item-price {
+    margin: 0;
+    line-height: 1;
+    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #2b0000;
+  }
+}
+
+i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  font-size: 1rem;
+  color: #2b0000;
+}
+
+/*パーマ金額テーブル　終了*/
+
+/*おすすめポイント*/
+
+.menu-price-item-recommend {
+  margin-top: 40px;
+  border: 1px solid #4d4c4a;
+  padding: 12px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-price-item-recommend {
+    margin: 20px 10px;
+    padding: 10px 4px;
+  }
+}
+
+.recommend-point {
+  line-height: 1.5;
+  margin: 0.35em 0;
+  padding-left: 28px;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.recommend-point li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .recommend-point li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+}
+}
+/*おすすめポイント*/
+

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+body {
+  color: #8e7757;
+  background-color: #fff;
+}
+
+/*スライダー設定開始*/
+/*写真のタイトルの位置　開始*/
+.aboutSlider-titleGroup {
+  margin-bottom: 30px;
+}
+
+.aboutSlider-titleGroup .title:first-child {
+  margin-bottom: 10px;
+}
+/*写真のタイトルの位置　終了*/
+
+/*写真の文字設定　開始*/
+.aboutSlider-h1 {
+  letter-spacing: 0.1em;
+}
+
+.aboutSlider-information p {
+  font-size: 116.667%;
+  line-height: 2;
+  margin-bottom: 25px;
+  letter-spacing: 0.1em;
+}
+/*写真の文字設定　終了*/
+/*スライダー設定終了*/
+
+/*こだわり設定　開始*/
+#kodawari {
+  position: relative;
+}
+
+#kodawari:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background-color: #e1dad4;
+  z-index: -2;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+/*こだわりのタイトル部分*/
+.section-ttl {
+  font-size: 20px;
+  color: #8e7757;
+  text-align: center;
+  font-weight: 500;
+  margin: 30px 0px 50px 0px;
+}
+
+.section-ttl span {
+  display: block;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/*こだわりのタイトル部分*/
+
+/*3つのこだわり説明部分*/
+
+.kodawari-in {
+  display: flex;
+  max-width: 1500px;
+  width: calc(100% - 120px);
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .kodawari-in {
+    width: calc(100% - 80px);
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #kodawari:after {
+    height: calc(100% - 300px);
+  }
+}
+
+/*3つのこだわり説明部分*/
+
+/*こだわり各パートの設定*/
+
+.kodawari-one {
+  width: 30%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .kodawari-one {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.kodawari-img {
+  margin-bottom: 80px;
+}
+
+.kodawari-in img {
+  max-width: 100%;
+}
+
+.kodawari-ttl {
+  font-size: 20px;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .kodawari-ttl {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kodawari-txt {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+}
+
+.kodawari-txt {
+  text-align: left;
+}
+
+/*こだわり各パートの設定*/
+
+/*こだわりの設定終了*/
+
+/*メニュー設定　開始*/
+
+.menu-in {
+  width: 94%;
+  margin: 0 auto;
+  color: #8e7757;
+}
+
+/*メニュータイトル*/
+
+.menu-in h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+/*各メニュー部分*/
+
+@media only screen and (min-width: 800px) {
+  .col3 {
+    text-align: center;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .col3 li {
+    display: inline-block;
+    width: 30%;
+    padding: 2%;
+    vertical-align: top;
+  }
+}
+
+.col3 li {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .menu-in h2 {
+    padding: 50px 0 20px 0;
+  }
+}
+
+.menu-in h2 {
+  font-size: 20px;
+}
+
+.col3 img {
+  max-width: 288px;
+  display: block;
+  margin: -5px auto 20px;
+  width: 100%;
+  height: auto;
+}
+
+.col3 p {
+  margin: 0;
+  padding: 0;
+}
+
+/*メニュー設定終了*/
+
+/*おすすめメニュー診断　設定開始*/
+
+.match-in {
+  color: #fff;
+  background-color: #E8C4BC;
+}
+
+.match-in h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.match-in p {
+  font-size: 18px;
+}
+
+a.btn--red {
+  font-size: 20px;
+  color: #fff;
+  background-color: #AB4A35;
+  border-bottom: 5px solid #A24934;
+}
+
+a.btn--red:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #AB4A35;
+  border-bottom: 2px solid #A24934;
+}
+
+a.btn--shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*おすすめメニュー診断　設定終了*/
+
+/*ロケーション 設定開始*/
+
+.location {
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+  padding: 80px 0 50px;
+}
+
+.location h3 {
+  font-family: DidotLTPro-Bold, YuMincho, "\6E38\660E\671D", Hiragino Mincho ProN, "\FF2D\FF33    \660E\671D", serif;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+  color: #8e7757;
+}
+
+.location-mapArea {
+  position: relative;
+  padding: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .location-mapArea {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location-mapArea iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*ロケーション　設定終了*/
+

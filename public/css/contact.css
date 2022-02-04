@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4    Pro W3", "\30D2\30E9\30AE\30CE\89D2\30B4    Pro W6", "Noto Sans JP", "\30E1\30A4\30EA\30AA", "Meiryo", Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+}
+
+/*ページトップのタイトル　開始*/
+
+.content-theme {
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  margin: 0 0 80px 0;
+  max-width: 900px;
+  background-color: #f5faf9;
+  color: #977119;
+}
+
+@media screen and (max-width: 768px) {
+  .content-theme {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 0 30px 0;
+    max-width: 900px;
+    background-color: #f5faf9;
+    color: #977119;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin: 0px;
+  font-size: 2em;
+}
+
+.content-theme-subttl {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-theme-subttl {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-weight: 500;
+    margin: 0px;
+  }
+}
+
+/*ページタイトル　終了*/
+
+/*予約の場合　注意事項開始*/
+
+.contact-caution p {
+  padding: 5px 0 20px 0;
+}
+
+/*予約の場合　注意事項　終了*/
+
+.check-button {
+  padding: 20px;
+}
+
+.contact-validation {
+  color: red;
+  padding: 0 0 40px 0;
+}
+
+/*確認画面*/
+
+.contact-question {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 2px);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+

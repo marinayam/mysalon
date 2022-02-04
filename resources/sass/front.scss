@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W6", "Noto Sans JP", "\30E1\30A4\30EA\30AA", "Meiryo", Arial, sans-serif;
+  /* font-family: "Yu Mincho", "游明朝", "游明朝体", " Hiragino Mincho ProN", "ヒラギノ明朝 ProN", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro", "MS Mincho", "ＭＳ 明朝", " MS PMincho", "ＭＳ Ｐ明朝", "Sawarabi Mincho"; */
+  /* font-family: 'Roboto', sans-serif; */
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  background-color: transparent;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*ヘッター*/
+.sticky-top {
+  background-color: #fff;
+}
+/*ヘッター*/
+
+/*予約アイコン開始*/
+.nav-link-appoint {
+  padding: 15px 30px;
+  position: relative;
+  background-color: #977119;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+}
+.nav-link-appoint:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+/*予約アイコン終了*/
+
+/*カルテアイコン開始*/
+.nav-link-karte {
+  padding: 15px 30px;
+  position: relative;
+  background-color: #A0522D;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+}
+.nav-link-karte:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+/*カルテアイコン終了*/
+
+/*ナビゲーション設定*/
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 4px;
+}
+/*ナビゲーション終了*/
+
+/*ハンバーガーメニューデザイン開始*/
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+}
+/*ハンバーガーメニューデザイン終了*/
+
+/*ショップロゴ設定*/
+.navbar-brand:hover {
+  opacity: 0.5;
+}
+/*ショップロゴ設定*/
+
+/*フッター開始*/
+footer {
+  margin-bottom: 0;
+  background-color: #e1dad4;
+  color: #333;
+  padding: 50px 0;
+}
+/*フッター余白*/
+
+
+/*フッター3箇所の部分*/
+.footer-menu {
+  padding-bottom: 50px;
+}
+
+/*フッターのタイトル設定*/
+.footer-title {
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  margin: 0px;
+}
+
+/*フッター項目*/
+.footer-list {
+  font-size: 14px;
+  line-height: 2;
+  list-style: none;
+}
+
+/*お問い合わせフォーム*/
+.btn-outline-dark{
+  margin-top: 20px;
+}
+
+/*フッター著作権*/
+.footer_in2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+/*フッター終了*/

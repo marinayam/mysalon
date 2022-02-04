@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W6", "Noto Sans JP", "\30E1\30A4\30EA\30AA", "Meiryo", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/*ページトップのタイトル　開始*/
+
+.content-theme {
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  margin: 0 0 80px 0;
+  max-width: 900px;
+  background-color: #f5faf9;
+  color: #977119;
+}
+
+@media screen and (max-width: 768px) {
+  .content-theme {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 0 30px 0;
+    max-width: 900px;
+    background-color: #f5faf9;
+    color: #977119;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin: 0px;
+  font-size: 2em;
+}
+
+.content-theme-ttl {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-family: "BebasNeue";
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .content-theme-ttl {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+.chart-subttl {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .chart-subttl {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-weight: 500;
+    margin: 0px;
+  }
+}
+
+/*ページタイトル　終了*/
+
+/*確認画面での質問の文字*/
+.chart-question{
+  font-weight:600;
+}
+/*確認画面での質問の文字*/
+
+/*ご来店きっかけのタイトル*/
+.content-theme-ttl{
+  padding:30px 0;
+}
+/*項目への記入の注意*/
+.chart h2{
+  font-size:24px;
+  font-weight: 550;
+}
+
+
+.example {
+  font-size: 12px;
+}
+.chart-notice{
+  padding: 5px; 
+  border: solid 1px;
+  margin:30px 0;
+}
+.form-check{
+  margin: 15px 0; 
+}
+.chart-notice h1{
+  font-size:24px;
+  text-align: center;
+}
+/*カルテ送信完了ページ*/
+.chart-send{
+  text-align: center;
+  padding: 30px 0; 
+}
+.check-button{
+  padding: 30px 0; 
+}
+.border-dark{
+  padding: 0.5em 1em;
+}
+@media screen and (max-width: 768px) {
+  .chart-answer{
+    margin-bottom: 2rem;
+}
+}
+@media screen and (max-width: 768px) {
+  .chart-answer u{
+    padding:0 50px;
+    
+}
+}
+/*バリデーション欄の設定*/
+.chart-validation{
+  color: red;
+  padding:20px 0;
+}

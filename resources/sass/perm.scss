@@ -1,0 +1,225 @@
+body{
+    color: #8e7757;
+    background-color: #fff;
+}
+.container {
+    max-width: 1220px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+@media screen and (max-width: 768px){
+.container {
+    padding: 10px 0 0;
+}}
+/*ページ画像*/
+.menu_page_head{
+    opacity: 0.5;
+    position: relative;
+    margin-bottom: 0;
+}
+.menu_page_head h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-30%,-30%);
+    -webkit-transform: translate(-30%,-30%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color: #2b0000;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.menu_page_head span{
+    display: block;
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.125em;
+    padding-top: 70px;
+}
+.menu_page_head h2 smal{
+    font-family: 'Noto Sans CJK JP Regular', sans-serif ;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+@media screen and (max-width: 640px){
+.menu_page_head span {
+    font-size: 26px;
+    padding-top: 50px;
+}}
+@media screen and (max-width: 640px){
+.menu_page_head small {
+    font-size: 20px;
+    padding-top: 50px;
+}}
+/*ページ画像*/
+
+/*パーマメニュー*/
+.section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.menu{
+    padding: 50px 0;
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+.menu {
+    padding: 0 ;
+}}
+.inner--sm {
+    max-width: 760px;
+}
+.inner {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner.inner--sm.inner-padding--lg h3{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    line-height: 1.4;
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 640px){
+.inner.inner--sm.inner-padding--lg h3 {
+    font-size: 20px;
+    margin-top:50px;
+}}
+@media screen and (max-width: 768px){
+.inner-padding--lg {
+    padding: 0 30px;
+}}
+.recommend_ttl{
+    font-size: 15px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-weight: 300;
+    text-align: center;
+}
+/*パーマ金額テーブル*/
+.table{
+    border-top: 1px solid #ab939d;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: transparent;
+}
+.item{
+    padding: 30px 10px;
+    line-height: 1.4;
+    border-bottom: 1px solid #ab939d;
+    list-style-type: none;
+    margin: 0;
+    font-size: 100%;
+}
+@media screen and (max-width: 768px){
+.item {
+    padding: 20px 10px;
+}}
+.c_flex_column_half {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+.c_flex_column_half {
+    display: block;
+    width: 100%;
+}}
+.c_flex_column__item.left {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.item_name{
+    margin: 0;
+    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #2b0000;
+}
+@media screen and (max-width: 768px){
+.item_name {
+    font-size: 10px;
+    font-size: 1.0rem;
+}}
+.item_detail{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 14px;
+    font-size: 1.0rem;
+    opacity: 0.9;
+    color: #2b0000;
+}
+@media screen and (max-width: 768px){
+.item_detail{
+    font-size: 10px;
+    font-size: 0.9rem;
+}}
+.c_flex_column__item.right {
+    -ms-flex-preferred-size: 200px;
+    -webkit-flex-basis: 200px;
+    flex-basis: 200px;
+    text-align: right;
+}
+.right.c_flex_column__item{
+    flex-basis: 200px;
+    text-align: right;
+}
+.item_price{
+    margin: 0;
+    line-height: 1.0;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #2b0000;
+}
+i {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    font-size: 1rem;
+    color: #2b0000;
+}
+/*パーマメニュー*/
+/*おすすめポイント*/
+.menu-price-item-recommend{
+    margin-top: 40px;
+    border: 1px solid #4d4c4a;
+    padding: 12px 20px;
+}
+.recommend-point{
+    line-height: 1.5;
+    margin: 0.35em 0;
+    padding-left: 28px;
+    font-size: 16px;
+    text-align: left;
+}
+.recommend-point li{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+@media screen and (max-width: 768px){
+.menu-price-item-recommend {
+    margin: 0 20px;
+}}
+/*おすすめポイント*/

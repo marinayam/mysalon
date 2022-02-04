@@ -1,0 +1,150 @@
+.service-content {
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    background-color: white;
+}
+.service-content h2{
+    font-size: 30px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    color: #977119;
+}
+@media screen and (max-width: 768px) {
+  .service-content h2{
+    font-size: 20px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    color: #977119;
+}
+}
+.service-content p{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .service-content p{
+    color: black;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+}
+/*ご来店の注意事項　開始*/
+.service-content-color {
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+    background-color: #f5faf9;
+    letter-spacing: 2px;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+  .service-content-color {
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    background-color: #f5faf9;
+    letter-spacing: 2px;
+    color: black;
+}}
+.notice-list{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 0;
+}
+.service-content-color h3{
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .service-content-color h3{
+    font-size: 20px;
+}}
+@media screen and (max-width: 768px) {
+  .service-content-color ul{
+    text-align: left;
+    font-size: 14px;
+    margin-left: 0;
+}}
+/*ご来店の注意事項　終了*/
+/*手術の流れ　開始*/
+.service-content h3{
+    font-size: 30px;
+    padding-bottom: 50px;
+    font-weight: 600;
+    color: #977119;
+}
+@media screen and (max-width: 768px) {
+  .service-content h3{
+    font-size: 24px;
+    padding-bottom: 50px;
+    font-weight: 600;
+    color: #977119;
+}}
+
+.service-step h4{
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #977119;
+}
+
+@media screen and (max-width: 768px) {
+  .service-step h4{
+      font-size:18px;
+      padding-bottom: 30px;
+      font-weight: 500;
+      color: #977119;
+}}
+
+.service-step p{
+    text-align: center;
+    padding-bottom: 50px;
+}
+/*手術の流れ　終了*/
+/*ご予約の注意　開始*/
+.service-content-notice{
+    color: black;
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    background-color: #FFFACD;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .service-content-notice h3{
+    font-size: 22px;
+}}
+.service-content-notice p{
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .service-content-notice p{
+    font-size: 14px;
+    padding-bottom: 30px;
+}}
+.service-content-notice li{
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .service-content-notice li{
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}}
+/*ご予約の注意　終了*/
+.large{
+    font-size: 110%;
+}
+.section-inner-appoint p{
+    text-align: center;
+    padding-bottom: 20px;
+}

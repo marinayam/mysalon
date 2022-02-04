@@ -1,0 +1,98 @@
+/*タイトル　設定開始*/
+.match-ttl{
+  color:#964A0C;
+}
+.match-ttl p{
+  font-size:24px;
+  padding:30px 0;
+  text-align: center;
+  
+}
+/*タイトル設定　終了*/
+/*質問　開始*/
+.question{
+  color:#964A0C;
+  font-size:20px;
+}
+
+.question p{
+  padding:20px;
+}
+/*質問　終了*/
+/*答えのボタン　開始*/
+.btn-answer {
+    background:#CF9F79;
+    color: white;
+    font-size:20px;
+    width:300px;
+}
+@media screen and (max-width: 768px) {
+  .btn-answer{
+    background:#CF9F79;
+    color: white;
+    font-size:20px;
+    width:180px;
+    text-align: center;
+}
+}
+
+.choose-box {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.d-grid ul{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 50px 50px;
+}
+.d-grid li{
+  background-color: #CF9F79;
+  color:#fff;
+  margin: 6px 4px;
+  border-radius: 6px;
+}
+/*答えのボタン　終了*/
+.return-btn{
+  padding-top:30px;
+}
+/*おすすめメニュー結果　開始*/
+/*orの位置*/
+.answer-option{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .answer-option{
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+}
+}
+/*orの位置*/
+.card{
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+/*メニューのタイトル　開始*/
+.answer-ttl{
+  font-weight: 600;
+}
+/*メニューのタイトル　終了*/
+/*メニューの値段　開始*/
+.answer-price{
+  text-align: right;
+}
+/*メニューの値段　終了*/
+/*予約ボタン　開始*/
+.match-appoint-btn{
+  padding:20px;
+  text-align: center;
+}
+/*予約ボタン　終了*/
+/*戻るボタン　開始*/
+.match-return-btn{
+  text-align: left;
+}
