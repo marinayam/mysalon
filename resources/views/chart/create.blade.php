@@ -19,7 +19,7 @@
                 @endif
                 @csrf
                 {{-- カルテ項目開始 --}}
-                <div class="form-group row">
+                {{--<div class="form-group row">
                     <label class="col-md-5">
                         <span class="badge badge-danger">必須</span>
                         お名前（漢字）</label>
@@ -53,6 +53,15 @@
                     <div class="col-md-10">
                         <input type="text" class="form-control" name="email" value="{{ old('email') }}">
                         <label class="example col-md-5">例：example@example.com</label>
+                    </div>
+                </div>--}}
+                <div class="form-group row">
+                    <label class="col-md-5">
+                        <span class="badge badge-danger">必須</span>
+                        ユーザーID</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="user_id" value="{{ old('user_id') }}">
+                        <label class="example col-md-5">例：</label>
                     </div>
                 </div>
                 <div class="form-group row">

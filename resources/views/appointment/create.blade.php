@@ -24,7 +24,7 @@
                 @csrf
                 {{-- validation --}}
                 {{-- 予約フォーム --}}
-                <div class="form-group row">
+                {{--<div class="form-group row">
                     <label class="col-md-5">
                         <span class="badge badge-danger">必須</span>
                         お名前（漢字）</label>
@@ -61,10 +61,20 @@
                         <input class="form-control" value="{{ old('tel') }}" type="tel" name="tel">
                         <label class="example col-md-5">例:090-0000-0000</label>
                     </div>
-                </div>
+                </div>--}}
+                <div class="form-group row">
+                    <label for="user_id"class="col-md-5">
+                        <span class="badge badge-danger">必須</span>
+                        ユーザーID
+                    </label>
+                    <div class="col-md-10">
+                        <input class="form-control" value="{{ old('user_id') }}" type="user_id" name="user_id">
+                        <label class="example col-md-5">例:</label>
+                    </div>
+                </div>--
                 {{-- メニュー選択--}}
                 <div class="form-group row">
-                    <label for="tel"class="col-md-12">
+                    <label class="col-md-12">
                         <span class="badge badge-danger">必須</span>
                         メニューを選択ください<br>
                         <br>

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>顧客情報の詳細</h2>
-                <form action="{{ action('Admin\ChartController@detail') }}" method="get" enctype="multipart/form-data">
+                <form action="{{ action('Admin\UserController@chart') }}" method="get" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)
@@ -13,34 +13,6 @@
                             @endforeach
                         </ul>
                     @endif
-                    <div class="form-group row">
-                        <label for="name01" class="col-md-5">名前(漢字)</label>
-                        <p class="col-md-5">{{ $chart_form->name01 }}</p>
-                        <div class="col-md-10">
-                            <input class="form-control" value="{{ $chart_form->name01 }}" type="hidden" name="name01" >
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="name02" class="col-md-5">名前(ふりがな)</label>
-                        <p class="col-md-5">{{ $chart_form->name02 }}</p>
-                        <div class="col-md-10">
-                            <input class="form-control" name="name02" value="{{ $chart_form->name02 }}" type="hidden">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="tel" class="col-md-5">電話番号</label>
-                        <p class="col-md-5">{{ $chart_form->tel }}</p>
-                        <div class="col-md-10">
-                            <input class="form-control" name="tel" value="{{ $chart_form->tel }}" type="hidden">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="email" class="col-md-5">メールアドレス</label>
-                        <p class="col-md-5">{{ $chart_form->email }}</p>
-                        <div class="col-md-10">
-                            <input class="form-control" name="email" value="{{ $chart_form->email }}" type="hidden">
-                        </div>
-                    </div>
                     <div class="form-group row">
                         <label for="birthday" class="col-md-5">生年月日</label>
                         <p class="col-md-5">{{ $chart_form->birthday }}</p>
@@ -129,7 +101,7 @@
                     <div class="form-group row">
                         <div class="col-md-10">
                             <div class="return-btn">
-                                <a class="btn btn-primary" href={{ route('chart.index') }}>一覧へもどる</a>
+                                <a class="btn btn-primary" href={{ route('index') }}>一覧へもどる</a>
                             </div>
                         </div>
                     </div>

@@ -16,7 +16,7 @@
                 <form method="POST" action="{{ route('appointment.send') }}">
                     @csrf
                     {{-- 入力内容確認 --}}
-                    <div class="form-group row appointment-answer">
+                    {{--<div class="form-group row appointment-answer">
                         <label class="col-md-5 appointment-question">お名前（漢字）</label>
                         <p class="col-md-5">{{ $inputs['name01'] }}</p>
                         <div class="col-md-10">
@@ -42,6 +42,13 @@
                         <p class="col-md-5">{{ $inputs['email'] }}</p>
                         <div class="col-md-10">
                             <input type="hidden" class="form-control" name="email" value="{{ $inputs['email'] }}">
+                        </div>
+                    </div>--}}
+                    <div class="form-group row appointment-answer">
+                        <label class="col-md-5 appointment-question">ユーザーID</label>
+                        <p class="col-md-5">{{ $inputs['user_id'] }}</p>
+                        <div class="col-md-10">
+                            <input type="hidden" class="form-control" name="user_id" value="{{ $inputs['user_id'] }}">
                         </div>
                     </div>
                     {{-- メニュー選択--}}

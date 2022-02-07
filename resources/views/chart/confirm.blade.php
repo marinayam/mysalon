@@ -21,7 +21,7 @@
                         </ul>
                     @endif
                     @csrf
-                    <div class="form-group row chart-answer">
+                    {{--<div class="form-group row chart-answer">
                         <label class="col-md-5 chart-question">お名前（漢字）</label>
                         <p class="col-md-5">{{ $inputs['name01'] }}</p>
                         <div class="col-md-10">
@@ -47,6 +47,13 @@
                         <p class="col-md-5">{{ $inputs['email'] }}</p>
                         <div class="col-md-10">
                             <input type="hidden" class="form-control" name="email" value="{{ $inputs['email'] }}">
+                        </div>
+                    </div--}}
+                    <div class="form-group row chart-answer">
+                        <label class="col-md-5 chart-question">ユーザーID</label>
+                        <p class="col-md-5">{{ $inputs['user_id'] }}</p>
+                        <div class="col-md-10">
+                            <input type="hidden" class="form-control" name="user_id" value="{{ $inputs['user_id'] }}">
                         </div>
                     </div>
                     <div class="form-group row chart-answer">

@@ -75,7 +75,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   Route::get('home',      'Admin\HomeController@index')->name('admin.home');
 
   // 最初のページ
-  Route::get('salon/index', 'Admin\SalonController@index')->name('index');
+  // Route::get('salon/index', 'Admin\SalonController@index')->name('index');
+  Route::get('salon/index', 'Admin\UserController@index')->name('index');
+  Route::get('salon/chart', 'Admin\UserController@chart');
+  Route::get('salon/appointment', 'Admin\UserController@appointment');
 
   // カルテ顧客情報
   Route::get('chart/index', 'Admin\ChartController@index')->name('admin.chart.index');

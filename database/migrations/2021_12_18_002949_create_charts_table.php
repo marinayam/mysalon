@@ -17,10 +17,6 @@ class CreateChartsTable extends Migration
         Schema::create('charts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('name01');//名前（漢字）を保存するカラム
-            $table->string('name02');//名前（ふりがな）を保存するカラム
-            $table->string('tel');//電話番号を保存するカラム
-            $table->string('email');//メールアドレスを保存するカラム
             $table->date('birthday');//生年月日を保存するカラム
             $table->string('zip');//郵便番号を保存するカラム
             $table->string('pref');//都道府県を保存するカラム
