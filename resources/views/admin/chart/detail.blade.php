@@ -103,6 +103,11 @@
                             <div class="return-btn">
                                 <a class="btn btn-primary" href={{ route('index') }}>一覧へもどる</a>
                             </div>
+                            {{--
+                            <div>
+                                <a href="{{ action('Admin\ChartController@edit', ['id' => $chart->id]) }}">編集</a>
+                            </div>
+                            --}}
                         </div>
                     </div>
                 </form>

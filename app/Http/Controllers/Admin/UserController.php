@@ -22,7 +22,7 @@ class UserController extends Controller
           $users = User::all();
           
       }
-      return view('admin.index', ['users' => $users, 'cond_name' => $cond_name]);
+      return view('admin.index', compact(['users', 'cond_name']));
     }
     public function chart(Request $request)
     {
@@ -36,10 +36,10 @@ class UserController extends Controller
     public function appointment(Request $request)
     {
         // appointment Modelからデータを取得する
-        $appointment= Appointment::find($request->id);
-        if (empty($appointment)) {
+        $user= User::find($request->id);
+        if (empty($user)) {
             abort(404);    
         }
-        return view('admin.appointment.detail', ['appointment_form' => $appointment]);
+        return redirect('admin/appointment/index?user_id=' . $user->id);
     }
 }

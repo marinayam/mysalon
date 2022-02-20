@@ -18,10 +18,15 @@ class AppointmentController extends Controller
     {
         $cond_name = $request->cond_name;
         $cond_date = $request->cond_date;
-        
-      if ($cond_name != '') {
+        $user_id = $request->user_id;
+      
+      $username = null;
+      if ($user_id) {
+        $username = User::find($user_id)->kanji_name;
+        $appointments = Appointment::where('user_id', $user_id)->get();
+      } elseif ($cond_name != '') {
           // 検索されたら検索結果を取得する
-          $appointments = Appointment::where('name02', $cond_name)->get();
+          $appointments = Appointment::where('hira_name', $cond_name)->get();
           
       }elseif($cond_date != ''){
           $appointments = Appointment::where('date', $cond_date)->get();
@@ -30,7 +35,7 @@ class AppointmentController extends Controller
           $appointments = Appointment::all();
       }
       
-      return view('admin.appointment.index', ['appointments' => $appointments, 'cond_name' => $cond_name,'cond_date' => $cond_date]);
+      return view('admin.appointment.index', compact(['appointments', 'cond_name', 'cond_date', 'username']));
     }
     
     //クライエント情報の詳細を表示させる
@@ -41,7 +46,7 @@ class AppointmentController extends Controller
         if (empty($appointment)) {
             abort(404);    
         }
-        return view('admin.appointment.detail', ['appointment_form' => $appointment]);
+        return view('admin.appointment.detail', compact(['appointment']));
     }
     //クライエント情報の編集画面
     public function edit(Request $request)

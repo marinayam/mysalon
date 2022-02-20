@@ -28,9 +28,10 @@
                         <thead>
                             <tr>
                                 <th width="1%">ID</th>
-                                <th width="10%">名前</th>
-                                <th width="12%">なまえ</th>
-                                <th width="10%">email</th>
+                                <th width="16%">名前</th>
+                                <th width="16%">なまえ</th>
+                                <th width="20%">tel</th>
+                                <th width="20%">email</th>
                             </tr>
                         </thead>
                         <tbody>

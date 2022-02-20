@@ -39,7 +39,7 @@
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href={{ route('admin.chart.index') }}>顧客一覧
+                            <a class="dropdown-item" href={{ route('index') }}>顧客一覧
                             </a>
                             <a class="dropdown-item" href={{ route('admin.appointment.index') }}>予約一覧
                             </a>

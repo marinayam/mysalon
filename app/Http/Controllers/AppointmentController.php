@@ -12,6 +12,7 @@ use App\Perm;
 use App\Extension;
 use App\Eyebrow;
 use App\Option;
+use App\User;
 
 
 class AppointmentController extends Controller

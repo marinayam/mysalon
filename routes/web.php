@@ -50,6 +50,7 @@ Route::group(['middleware' => 'auth:user'], function() {
   Route::post('appointment/create', 'AppointmentController@create')->name('appointment.create');
   Route::post('appointment/confirm', 'AppointmentController@confirm')->name('appointment.confirm');
   Route::post('appointment/send', 'AppointmentController@send')->name('appointment.send');
+  Route::get('appointment/index', 'AppointmentController@index')->name('appointment.index');
 });
 
 
@@ -77,8 +78,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   // 最初のページ
   // Route::get('salon/index', 'Admin\SalonController@index')->name('index');
   Route::get('salon/index', 'Admin\UserController@index')->name('index');
-  Route::get('salon/chart', 'Admin\UserController@chart');
-  Route::get('salon/appointment', 'Admin\UserController@appointment');
+  Route::get('salon/chart', 'Admin\UserController@chart')->name('admin.chart.index');
+  Route::get('salon/appointment', 'Admin\UserController@appointment')->name('admin.appointment.index');
 
   // カルテ顧客情報
   Route::get('chart/index', 'Admin\ChartController@index')->name('admin.chart.index');
@@ -145,3 +146,4 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/detail', 'HomeController@detail');
