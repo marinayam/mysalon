@@ -14,30 +14,6 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2" for="name01">名前(漢字)</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="name01" value="{{ $chart_form->name01 }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="name02">名前(ふりがな)</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="name02" value="{{ $chart_form->name02 }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="tel">電話番号</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="tel" value="{{ $chart_form->tel }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="email">メールアドレス</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="email" value="{{ $chart_form->email }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
                         <label class="col-md-2" for="birthday">生年月日</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="birthday" value="{{ $chart_form->birthday }}">

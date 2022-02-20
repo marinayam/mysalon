@@ -14,30 +14,6 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2" for="name01">名前(漢字)</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="name01" value="{{ $appointment_form->name01 }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="name02">名前(ふりがな)</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="name02" value="{{ $appointment_form->name02 }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="tel">電話番号</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="tel" value="{{ $appointment_form->tel }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="email">メールアドレス</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="email" value="{{ $appointment_form->email }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
                         <label class="col-md-2" for="date">日にち</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="date" value="{{ $appointment_form->date }}">

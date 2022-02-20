@@ -73,12 +73,15 @@
                         <p class="col-md-5">{{ $appointment->comment }}</p>
                      </div>
                      <hr color="#c0c0c0">
-                    <div class="form-group row">
-                        <div class="col-md-10">
-                            <div class="return-btn">
-                                <a class="btn btn-primary" href={{ route('index') }}>一覧へもどる</a>
-                            </div>
+                    <div class="check-button">
+                      <div class="btn-toolbar">
+                        <div class="return-btn">
+                            <a class="btn btn-primary" href={{ route('index') }}>一覧へもどる</a>
                         </div>
+                        <div class="btn-group ml-auto">
+                          <a class="btn btn-secondary" href="{{ action('Admin\AppointmentController@edit', ['id' => $appointment->id]) }}">編集</a>
+                       </div>
+                      </div>
                     </div>
                 </form>
             </div>

@@ -98,16 +98,14 @@
                         <label class="col-md-5" for="comment">コメント</label>
                         <p class="col-md-5">{{ $chart_form->comment }}</p>
                      </div>
-                    <div class="form-group row">
-                        <div class="col-md-10">
+                    <div class="check-button">
+                      <div class="btn-toolbar">
                             <div class="return-btn">
                                 <a class="btn btn-primary" href={{ route('index') }}>一覧へもどる</a>
                             </div>
-                            {{--
-                            <div>
-                                <a href="{{ action('Admin\ChartController@edit', ['id' => $chart->id]) }}">編集</a>
+                            <div class="btn-group ml-auto">
+                                <a class="btn btn-secondary" href="{{ action('Admin\ChartController@edit', ['id' => $chart_form->id]) }}">編集</a>
                             </div>
-                            --}}
                         </div>
                     </div>
                 </form>
