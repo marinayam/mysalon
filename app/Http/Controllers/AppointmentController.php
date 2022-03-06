@@ -74,14 +74,6 @@ class AppointmentController extends Controller
     {
         $this->validate($request, Appointment::$rules);
         //バリデーションを実行（結果に問題があれば処理を中断してエラーを返す）
-        $request->validate([
-            'name01' => 'required',
-            'name02' => 'required',
-            'tel' => 'required',
-            'email' => 'required',
-            'date' => 'required',
-            'time' => 'required',
-            ]);
         
         //フォームから受け取ったすべてのinputの値を取得
         $inputs = $request->all();
@@ -123,16 +115,7 @@ class AppointmentController extends Controller
     
     public function send(Request $request)
     {
-        //バリデーションを実行（結果に問題があれば処理を中断してエラーを返す）
-        $request->validate([
-            'name01' => 'required',
-            'name02' => 'required',
-            'tel' => 'required',
-            'email' => 'required',
-            'date' => 'required',
-            'time' => 'required',
-        ]);
-
+        
         //フォームから受け取ったactionの値を取得
         $action = $request->input('action');
         
@@ -251,7 +234,7 @@ class AppointmentController extends Controller
         //actionの値で分岐
         
         //入力されたメールアドレスにメールを送信
-        \Mail::to($inputs['email'])->send(new AppointmentSendmail($inputs));
+        \Mail::to($inputs['user_email'])->send(new AppointmentSendmail($inputs));
 
         //再送信を防ぐためにトークンを再発行
         $request->session()->regenerateToken();

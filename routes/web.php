@@ -51,6 +51,7 @@ Route::group(['middleware' => 'auth:user'], function() {
   // 予約画面
   Route::get('appointment/create', 'AppointmentController@add')->name('appointment.create');
   Route::post('appointment/create', 'AppointmentController@create')->name('appointment.create');
+  Route::get('appointment/confirm', 'AppointmentController@confirm')->name('appointment.confirm');
   Route::post('appointment/confirm', 'AppointmentController@confirm')->name('appointment.confirm');
   Route::post('appointment/send', 'AppointmentController@send')->name('appointment.send');
   Route::get('appointment/index', 'AppointmentController@index')->name('appointment.index');

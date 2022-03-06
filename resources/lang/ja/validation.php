@@ -173,7 +173,7 @@ return [
         'perm' => '「まつ毛パーマ」',
         'extension' => '「まつげエクステ」',
         'eyebrow' => '「美眉スタイリング」',
-        'user_id' => '「ユーザーID」',
+        'user_email' => '「ユーザーID」',
         ],
 
 ];

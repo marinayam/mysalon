@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title','Appointment')
+@section('title','ご予約画面')
 @section('content')
 <div class="container">
   <div class="row mx-auto">
@@ -29,7 +29,7 @@
                 ユーザーID(メールアドレス)
           </label>
           <div class="col-md-10">
-            <input class="form-control" value="{{ old('user_id') }}" type="user_id" name="user_id">
+            <input class="form-control" value="{{ old('user_email') }}" type="user_id" name="user_email">
             <label class="example col-md-5">例:example@example.com</label>
           </div>
         </div>

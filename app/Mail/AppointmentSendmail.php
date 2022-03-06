@@ -11,8 +11,8 @@ class AppointmentSendmail extends Mailable
 {
     use Queueable, SerializesModels;
     
-    private $name01;
-    private $name02;
+    private $kanji_name;
+    private $hira_name;
     private $tel;
     private $email;
     private $perm;
@@ -30,10 +30,10 @@ class AppointmentSendmail extends Mailable
      */
     public function __construct($inputs)
     {
-        $this->name01 = $inputs['name01'];
-        $this->name02 = $inputs['name02'];
-        $this->tel = $inputs['tel'];
-        $this->email = $inputs['email'];
+        // $this->kanji_name = $user->['kanji_name'];
+        // $this->hira_name = $inputs['hira_name'];
+        // $this->tel = $inputs['tel'];
+        // $this->email = $inputs['email'];
         if (isset($inputs['perm']))
         {
             $this->perm = $inputs['perm'];
@@ -68,10 +68,10 @@ class AppointmentSendmail extends Mailable
             ->subject('【リース 吉祥寺】お問い合わせありがとうございます')
             ->view('appointment.mail')
             ->with([
-                'name01' => $this->name01,
-                'name02' => $this->name02,
-                'email' => $this->email,
-                'tel' => $this->tel,
+                // 'kanji_name' => $this->name01,
+                // 'hira_name' => $this->name02,
+                // 'email' => $this->email,
+                // 'tel' => $this->tel,
                 'perm' => $this->perm,
                 'extension' => $this->extension,
                 'eyebrow' => $this->eyebrow,
