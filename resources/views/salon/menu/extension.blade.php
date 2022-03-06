@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title','Extension')
+@section('title','マツエク')
 @section('content')
 {{-- Laravel標準で用意されているCSSを読み込みます --}}
 <link href="{{ asset('css/app.css') }}" rel ="stylesheet">

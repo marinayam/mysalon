@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title','Eyebrow')
+@section('title','美眉スタイリング')
 @section('content')
 <div class="menu-container">
     <div class="menu-page-head">

@@ -18,8 +18,8 @@ class CreateAppointmentOptionTable extends Migration
             $table->unsignedBigInteger('option_id');
             $table->primary(['appointment_id','option_id']);
             // 外部キー制約
-            $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
-            $table->foreign('option_id')->references('id')->on('options')->onDelete('cascade');
+            // $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
+            // $table->foreign('option_id')->references('id')->on('options')->onDelete('cascade');
             });
     }
 

@@ -1,4 +1,3 @@
-<!--Profile_tabel使わない-->
 <?php
 
 use Illuminate\Support\Facades\Schema;

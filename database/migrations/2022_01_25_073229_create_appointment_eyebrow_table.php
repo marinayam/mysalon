@@ -18,8 +18,8 @@ class CreateAppointmentEyebrowTable extends Migration
             $table->unsignedBigInteger('eyebrow_id');
             $table->primary(['appointment_id','eyebrow_id']);
             // 外部キー制約
-            $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
-            $table->foreign('eyebrow_id')->references('id')->on('eyebrows')->onDelete('cascade');
+            // $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
+            // $table->foreign('eyebrow_id')->references('id')->on('eyebrows')->onDelete('cascade');
             });
     }
 

@@ -32,6 +32,7 @@
         <link href="{{ asset('css/staff.css') }}" rel="stylesheet">
         <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
         <link href="{{ asset('css/appointment.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/chart.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="app">
@@ -64,7 +65,7 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href={{ route('perm') }}>パーマ</a>
                                     <a class="dropdown-item" href={{ route('extension') }}>マツエク</a>
-                                    <a class="dropdown-item" href={{ route('eyebrow') }}>眉デザイン</a>
+                                    <a class="dropdown-item" href={{ route('eyebrow') }}>美眉スタイリング</a>
                                 </div>
                             </li>
                             {{-- ナビゲーション --}}

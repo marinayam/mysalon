@@ -18,8 +18,8 @@ class CreateAppointmentExtensionTable extends Migration
             $table->unsignedBigInteger('extension_id');
             $table->primary(['appointment_id','extension_id']);
             // 外部キー制約
-            $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
-            $table->foreign('extension_id')->references('id')->on('extensions')->onDelete('cascade');
+            // $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
+            // $table->foreign('extension_id')->references('id')->on('extensions')->onDelete('cascade');
             });
     }
 

@@ -18,8 +18,8 @@ class CreateChartTriggerTable extends Migration
             $table->unsignedBigInteger('trigger_id');
             $table->primary(['chart_id','trigger_id']);
             // 外部キー制約
-            $table->foreign('chart_id')->references('id')->on('charts')->onDelete('cascade');
-            $table->foreign('trigger_id')->references('id')->on('triggers')->onDelete('cascade');
+            // $table->foreign('chart_id')->references('id')->on('charts')->onDelete('cascade');
+            // $table->foreign('trigger_id')->references('id')->on('triggers')->onDelete('cascade');
             });
 }
         

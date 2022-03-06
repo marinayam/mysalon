@@ -1,4 +1,5 @@
 @extends('layouts.front')
+@section('title','ログイン画面')
 @section('content')
 <div class="container">
   <div class="row justify-content-center">
@@ -49,13 +50,13 @@
             <br>
             <br>
             <div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					アカウントをお持ちではない場合は<a href="#">登録</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">パスワードを忘れた場合はこちら</a>
-				</div>
-			</div>
+              <div class="d-flex justify-content-center links">
+                アカウントをお持ちではない場合は<a href={{ route('register') }}><p>登録</p></a>
+              </div>
+              <div class="d-flex justify-content-center links">
+                <a href="#"><p>パスワードを忘れた場合はこちら</p></a>
+              </div>
+            </div>
           </form>
         </div>
       </div>

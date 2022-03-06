@@ -32,6 +32,9 @@ Route::get('/contact', 'ContactController@create')->name('contact.create'); //�
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');  //確認ページ
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send'); //送信完了ページ
 
+// ログイン画面
+Route::get('/register', function() { return view('auth.register'); })->name('register');  // アカウント作成
+
 
 /*
 |--------------------------------------------------------------------------

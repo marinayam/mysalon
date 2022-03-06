@@ -18,8 +18,8 @@ class CreateAppointmentPermTable extends Migration
             $table->unsignedBigInteger('perm_id');
             $table->primary(['appointment_id','perm_id']);
             // 外部キー制約
-            $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
-            $table->foreign('perm_id')->references('id')->on('perms')->onDelete('cascade');
+            // $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
+            // $table->foreign('perm_id')->references('id')->on('perms')->onDelete('cascade');
             });
     }
 

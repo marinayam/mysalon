@@ -1,4 +1,4 @@
-@extends('layouts.chart')
+@extends('layouts.front')
 @section('title','カルテ記入')
 @section('content')
 <body>
@@ -60,7 +60,7 @@
                         <span class="badge badge-danger">必須</span>
                         ユーザーID</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" name="user_id" value="{{ old('user_id') }}">
+                        <input type="text" class="form-control" name="chart_id" value="{{ old('chart_id') }}">
                         <label class="example col-md-5">例：</label>
                     </div>
                 </div>
