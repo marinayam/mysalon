@@ -23,16 +23,6 @@
         @endif
         @csrf
         {{-- 予約フォーム --}}
-        <div class="form-group row">
-          <label for="user_id"class="col-md-5">
-            <span class="badge badge-danger">必須</span>
-                ユーザーID(メールアドレス)
-          </label>
-          <div class="col-md-10">
-            <input class="form-control" value="{{ old('user_email') }}" type="user_id" name="user_email">
-            <label class="example col-md-5">例:example@example.com</label>
-          </div>
-        </div>
         {{-- メニュー選択--}}
         <div class="form-group row">
           <label class="col-md-12">

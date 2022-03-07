@@ -15,13 +15,6 @@
       <div class="container mt-5">
         <form method="POST" action="{{ route('appointment.send') }}">
           @csrf
-          <div class="form-group row appointment-answer">
-            <label class="col-md-5 appointment-question">ユーザーID</label>
-            <p class="col-md-5">{{ $inputs['user_email'] }}</p>
-            <div class="col-md-10">
-              <input type="hidden" class="form-control" name="user_email" value="{{ $inputs['user_email'] }}">
-            </div>
-          </div>
           {{-- メニュー選択--}}
           <div class="form-group row appointment-answer">
             <label class="col-md-5 appointment-question">選択中のメニュー</label>

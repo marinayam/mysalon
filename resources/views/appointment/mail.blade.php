@@ -1,6 +1,7 @@
 ※このメールはシステムからの自動返信です<br>
 <br>
-{{--{{user->$kanji_name}}--}}様<br>
+@php $user = Auth::user(); @endphp
+{{$user->kanji_name}}様<br>
 <br>
 お問い合せいただき誠にありがとうございます。<br>
 <br>
@@ -10,9 +11,9 @@
 今しばらくお待ちくださいませ。<br>
 <br>
 -----□■□　お問い合わせ内容　□■□-----<br>
-【お名前】：{{--{{user->$kanji_name}}--}}様<br>
-【メールアドレス】：{{--{{user->$email}}--}}<br>
-【お電話番号】：{{--{{{user->$tel}}--}}<br>
+【お名前】：{{$user->kanji_name}}様<br>
+【メールアドレス】：{{$user->email}}<br>
+【お電話番号】：{{$user->tel}}<br>
 【ご予約メニュー】：<br>
 {{$perm}}<br>
 {{$extension}}<br>

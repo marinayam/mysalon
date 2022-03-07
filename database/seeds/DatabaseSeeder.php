@@ -53,13 +53,13 @@ class DatabaseSeeder extends Seeder
       ]);
       
       // 予約データ
-      $user_emails = ['aaa@bbb.com','ccc@ddd.com','eee@fff.com'];
+      $user_ids = ['1','2','3'];
       $dates = ['2022-02-01','2022-02-02','2022-02-03','2022-02-04'];
       $times = ['09:00','10:00','11:00','12:00'];
       $comments = ['おはよう','こんにちは','こんばんは','2回目'];
-      for ($i = 0; $i < count($user_emails); $i++) {
+      for ($i = 0; $i < count($user_ids); $i++) {
         \DB::table('appointments')->insert([
-          'user_email' => $user_emails[$i],
+          'user_id' => $user_ids[$i],
           'date' => $dates[$i],
           'time' => $times[$i],
           'comment' => $comments[$i],
@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
         ],
       ]);
       
-      $user_emails = ['aaa@bbb.com','ccc@ddd.com','eee@fff.com'];
+      $user_ids = ['1','2','3'];
       $birthdays = ['1996-01-01','1996-02-02','1996-03-03'];
       $zips = ['180-0001','180-0002','180-0003'];
       $prefs = ['東京都','東京都','東京都'];
@@ -122,9 +122,9 @@ class DatabaseSeeder extends Seeder
       $records = ['マツエク','パーマ','ヒアルロン酸'];
       $body_concerns = ['肩こり','目の疲れ','冷え'];
       $comments = ['おはよう','こんにちは','こんばんは'];
-      for ($i = 0; $i < count($user_emails); $i++) {
+      for ($i = 0; $i < count($user_ids); $i++) {
         \DB::table('charts')->insert([
-          'user_email' => $user_emails[$i],
+          'user_id' => $user_ids[$i],
           'birthday' => $birthdays[$i],
           'zip' => $zips[$i],
           'pref' => $prefs[$i],

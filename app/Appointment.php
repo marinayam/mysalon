@@ -8,7 +8,6 @@ class Appointment extends Model
 {
     protected $guarded = array ('id');
     public static $rules = array(
-        'user_email' => 'required',
         'date' => 'required',
         'time' => 'required',
        

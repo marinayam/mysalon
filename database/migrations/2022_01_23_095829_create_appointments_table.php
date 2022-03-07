@@ -15,7 +15,7 @@ class CreateAppointmentsTable extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('user_email');
+            $table->bigInteger('user_id');
             $table->date('date');//日にちを保存するカラム
             $table->time('time');//時刻を保存するカラム
             $table->string('comment')->nullable();;//質問等コメントを保存するカラム

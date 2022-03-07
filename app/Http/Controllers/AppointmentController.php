@@ -13,6 +13,7 @@ use App\Extension;
 use App\Eyebrow;
 use App\Option;
 use App\User;
+use Auth;
 
 
 class AppointmentController extends Controller
@@ -27,48 +28,6 @@ class AppointmentController extends Controller
         return view ('appointment.create', ['appointments'=>$appointments,'perms'=>$perms,'extensions'=>$extensions,'eyebrows'=>$eyebrows,'options'=>$options]);
     }
     
-     public function create(Request $request)
-    {
-        //フォームから受け取ったactionの値を取得
-        $action = $request->input('action');
-        
-        if (isset($appointment_form['perm'])){
-            $perms = Perm::whereIn('id', $appointment_form['perm'])->get();
-        } else{
-            $perms = [];
-        }
-        
-        if (isset($appointment_form['extension'])){
-            $extensions = Extension::whereIn('id', $appointment_form['extension'])->get();
-        } else{
-            $extensions = [];
-        }
-        
-        if (isset($appointment_form['eyebrow'])){
-            $eyebrows = Eyebrow::whereIn('id', $appointment_form['eyebrow'])->get();
-        } else{
-            $eyebrows =  [];
-        }
-        
-        if (isset($appointment_form['option'])){
-            $options = Option::whereIn('id', $appointment_form['option'])->get();
-        } else{
-            $options =  [];
-        }
-        unset($appointment_form['_token']);
-        unset($appointment_form['perm']);
-        unset($appointment_form['extension']);
-        unset($appointment_form['eyebrow']);
-        unset($appointment_form['option']);
-        unset($appointment_form['action']);
-        $appointment->fill($appointment_form);
-        $appointment->save();
-        $appointment->perms()->attach($perms);
-        $appointment->extensions()->attach($extensions);
-        $appointment->eyebrows()->attach($eyebrows);
-        $appointment->options()->attach($options);
-            
-    }
     
     public function confirm(Request $request)
     {
@@ -161,6 +120,7 @@ class AppointmentController extends Controller
         unset($appointment_form['_token']);
         unset($appointment_form['action']);
         $appointment->fill($appointment_form);
+        $appointment->user_id = Auth::id();
         $appointment->save();
         $appointment->perms()->attach($perms);
         $appointment->extensions()->attach($extensions);
@@ -234,7 +194,7 @@ class AppointmentController extends Controller
         //actionの値で分岐
         
         //入力されたメールアドレスにメールを送信
-        \Mail::to($inputs['user_email'])->send(new AppointmentSendmail($inputs));
+        \Mail::to(Auth::user()->email)->send(new AppointmentSendmail($inputs));
 
         //再送信を防ぐためにトークンを再発行
         $request->session()->regenerateToken();
