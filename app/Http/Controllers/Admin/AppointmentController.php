@@ -18,12 +18,12 @@ class AppointmentController extends Controller
     {
         $cond_name = $request->cond_name;
         $cond_date = $request->cond_date;
-        $user_email = $request->user_id;
+        $user_id = $request->user_id;
       
       $username = null;
-      if ($user_email) {
-        $username = User::find($user_email)->kanji_name;
-        $appointments = Appointment::where('user_email', $user_email)->get();
+      if ($user_id) {
+        $username = User::find($user_id)->kanji_name;
+        $appointments = Appointment::where('user_id', $user_id)->get();
       } elseif ($cond_name != '') {
           // 検索されたら検索結果を取得する
           $appointments = Appointment::where('hira_name', $cond_name)->get();

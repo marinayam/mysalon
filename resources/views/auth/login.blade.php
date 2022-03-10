@@ -54,7 +54,7 @@
                 アカウントをお持ちではない場合は<a href={{ route('register') }}><p>登録</p></a>
               </div>
               <div class="d-flex justify-content-center links">
-                <a href="#"><p>パスワードを忘れた場合はこちら</p></a>
+                <a href={{ route('password.request') }}><p>パスワードを忘れた場合はこちら</p></a>
               </div>
             </div>
           </form>

@@ -19,51 +19,6 @@
                 @endif
                 @csrf
                 {{-- カルテ項目開始 --}}
-                {{--<div class="form-group row">
-                    <label class="col-md-5">
-                        <span class="badge badge-danger">必須</span>
-                        お名前（漢字）</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" name="name01" value="{{ old('name01') }}">
-                        <label class="example col-md-5">例:山田花子</label>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-md-5">
-                        <span class="badge badge-danger">必須</span>
-                        お名前（ふりがな）</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" name="name02" value="{{ old('name02') }}">
-                        <label class="example col-md-5">例:やまだはなこ</label>
-                    </div>
-                 </div>
-                <div class="form-group row">
-                    <label class="col-md-5">
-                        <span class="badge badge-danger">必須</span>
-                        お電話番号</label>
-                    <div class="col-md-10">
-                        <input type="tel" class="form-control"  name="tel"  value="{{ old('tel') }}">
-                        <label class="example col-md-5">例：090-0000-0000</label>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-md-5">
-                        <span class="badge badge-danger">必須</span>
-                        メールアドレス</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" name="email" value="{{ old('email') }}">
-                        <label class="example col-md-5">例：example@example.com</label>
-                    </div>
-                </div>--}}
-                <div class="form-group row">
-                    <label class="col-md-5">
-                        <span class="badge badge-danger">必須</span>
-                        ユーザーID</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" name="chart_id" value="{{ old('chart_id') }}">
-                        <label class="example col-md-5">例：</label>
-                    </div>
-                </div>
                 <div class="form-group row">
                     <label class="col-md-5">
                         <span class="badge badge-danger">必須</span>

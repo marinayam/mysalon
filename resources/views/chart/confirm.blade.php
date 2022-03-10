@@ -21,41 +21,6 @@
                         </ul>
                     @endif
                     @csrf
-                    {{--<div class="form-group row chart-answer">
-                        <label class="col-md-5 chart-question">お名前（漢字）</label>
-                        <p class="col-md-5">{{ $inputs['name01'] }}</p>
-                        <div class="col-md-10">
-                            <input type="hidden" class="form-control" name="name01" value="{{ $inputs['name01'] }}">
-                        </div>
-                    </div>
-                    <div class="form-group row chart-answer">
-                        <label class="col-md-5 chart-question">お名前（ふりがな）</label>
-                        <p class="col-md-5">{{ $inputs['name02'] }}</p>
-                        <div class="col-md-10">
-                            <input type="hidden" class="form-control" name="name02" value="{{ $inputs['name02'] }}">
-                        </div>
-                    </div>
-                    <div class="form-group row chart-answer">
-                        <label class="col-md-5 chart-question">お電話番号</label>
-                        <p class="col-md-5">{{ $inputs['tel'] }}</p>
-                        <div class="col-md-10">
-                            <input type="hidden" class="form-control" name="tel" value="{{ $inputs['tel'] }}">
-                        </div>
-                    </div>
-                    <div class="form-group row chart-answer">
-                        <label class="col-md-5 chart-question">メールアドレス</label>
-                        <p class="col-md-5">{{ $inputs['email'] }}</p>
-                        <div class="col-md-10">
-                            <input type="hidden" class="form-control" name="email" value="{{ $inputs['email'] }}">
-                        </div>
-                    </div--}}
-                    <div class="form-group row chart-answer">
-                        <label class="col-md-5 chart-question">ユーザーID</label>
-                        <p class="col-md-5">{{ $inputs['user_id'] }}</p>
-                        <div class="col-md-10">
-                            <input type="hidden" class="form-control" name="user_id" value="{{ $inputs['user_id'] }}">
-                        </div>
-                    </div>
                     <div class="form-group row chart-answer">
                         <label class="col-md-5 chart-question">生年月日</label>
                         <p class="col-md-5">{{ $inputs['birthday'] }}</p>

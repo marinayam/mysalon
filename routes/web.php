@@ -35,6 +35,11 @@ Route::post('/contact/thanks', 'ContactController@send')->name('contact.send'); 
 // ログイン画面
 Route::get('/register', function() { return view('auth.register'); })->name('register');  // アカウント作成
 
+//パスワードリセット
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +61,6 @@ Route::group(['middleware' => 'auth:user'], function() {
   Route::post('appointment/send', 'AppointmentController@send')->name('appointment.send');
   Route::get('appointment/index', 'AppointmentController@index')->name('appointment.index');
 });
-
 
 /*
 |--------------------------------------------------------------------------
@@ -110,7 +114,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   // ご予約情報
   Route::get('appointment/index', 'Admin\AppointmentController@add');
   Route::get('appointment/index', 'Admin\AppointmentController@index')->name('admin.appointment.index');
-  Route::get('appointment/detail', 'Admin\AppointmentController@detail');
+  Route::get('appointment/detail', 'Admin\AppointmentController@detail')->name('admin.appointment.detail');;
   Route::get('appointment/edit', 'Admin\AppointmentController@edit');
   Route::post('appointment/edit', 'Admin\AppointmentController@update');
 
