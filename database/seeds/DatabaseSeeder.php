@@ -50,7 +50,15 @@ class DatabaseSeeder extends Seeder
           'created_at' => new DateTime(),
           'updated_at' => new DateTime(),
         ],
-        
+        [
+          'kanji_name' => '山田まりな',
+          'hira_name' => 'やまだまりな',
+          'email' => 'marina5197216@gmail.com',
+          'tel' => '090-0002-0003',
+          'password' => Hash::make('marina'),
+          'created_at' => new DateTime(),
+          'updated_at' => new DateTime(),
+        ],
       ]);
       
       // 予約データ
