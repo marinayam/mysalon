@@ -8,6 +8,8 @@ use App\Chart;
 use Carbon\Carbon;
 use Storage;
 use App\Trigger;
+use App\User;
+use Auth;
 
 class ChartController extends Controller
 {
@@ -15,7 +17,7 @@ class ChartController extends Controller
     {
         $charts=Chart::all();
         $triggers=Trigger::all();
-        return view ('chart.create', ['charts'=>$charts,'triggers'=>$triggers]);
+        return view ('chart.create', compact(['charts','triggers']));
     }
     
     public function create(Request $request)
@@ -43,6 +45,7 @@ class ChartController extends Controller
             unset($chart_form['trigger']);
             unset($chart_form['action']);
             $chart->fill($chart_form);
+            $chart->user_id = Auth::id();
             $chart->save();
             $chart->triggers()->attach($triggers);
 
@@ -60,10 +63,6 @@ class ChartController extends Controller
         $this->validate($request, Chart::$rules);
         //バリデーションを実行（結果に問題があれば処理を中断してエラーを返す）
         $request->validate([
-            'name01' => 'required',
-            'name02' => 'required',
-            'tel' => 'required',
-            'email' => 'required',
             'birthday' => 'required',
             'zip' => 'required',
             'pref' => 'required',

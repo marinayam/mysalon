@@ -25,7 +25,7 @@ class AppointmentController extends Controller
         $extensions=Extension::all();
         $eyebrows=Eyebrow::all();
         $options=Option::all();
-        return view ('appointment.create', ['appointments'=>$appointments,'perms'=>$perms,'extensions'=>$extensions,'eyebrows'=>$eyebrows,'options'=>$options]);
+        return view ('appointment.create', compact(['appointments','perms','extensions','eyebrows','options']));
     }
     
     

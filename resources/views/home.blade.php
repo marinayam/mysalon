@@ -5,6 +5,7 @@
         <div class="row">
             <h2>@if($username){{$username}}様@endif　予約一覧</h2>
         </div>
+        <br>
         <div class="row">
             <div class="list-news col-md-12 mx-auto">
                 <div class="row">
@@ -12,13 +13,13 @@
                         <thead>
                             <tr>
                                 <th width="10%">日にち</th>
-                                <th width="5%">時間</th>
-                                <th width="15%">パーマ</th>
-                                <th width="15%">マツエク</th>
-                                <th width="15%">眉</th>
-                                <th width="15%">オプション</th>
-                                <th width="17%">コメント</th>
-                                <th width="8%">操作</th>
+                                <th width="10%">時間</th>
+                                <th width="10%">パーマ</th>
+                                <th width="10%">マツエク</th>
+                                <th width="10%">眉</th>
+                                <th width="10%">オプション</th>
+                                <th width="10%">コメント</th>
+                                <th width="10%"></th>
                             </tr>
                         </thead>
                         <tbody>

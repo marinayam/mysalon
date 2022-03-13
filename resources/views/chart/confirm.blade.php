@@ -4,10 +4,10 @@
 <!--メッセージ-->
 <div class="container">
     <div class="row">
-        <div class ="col-md-8 mx-auto">
-            <div class="chart-content">
+        <div class ="col-md-8 mx-auto chart">
+            <div class="content-theme">
                 <h1 class>
-                    <span class="chart-ttl">カルテ記入</span>
+                    <span class="content-theme">カルテ記入</span>
                 </h1>
                 <p class="chart-subttl">確認画面</p>
             </div>
@@ -58,12 +58,11 @@
                     </div>
                     <div class="form-group row chart-answer">
                         <label class="col-md-5 chart-question">ご来店きっかけ</label>
-                        <p class="col-md-5">
+                        <p class="col-md-6">
                             @foreach($triggers as $trigger)
-                            {{$trigger->trigger}}
-                            <div class="col-md-10">
+                            {{$trigger->trigger}}<br>
                                 <input type="hidden" class="form-check-input"  name="trigger[{{ $trigger->id }}]" value="{{ $trigger->id }}">
-                            </div>
+                            
                             @endforeach
                         </p>
                     </div>

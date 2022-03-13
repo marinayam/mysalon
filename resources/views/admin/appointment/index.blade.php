@@ -55,7 +55,7 @@
                                     <td>{{ \Str::limit($appointment->comment, 100) }}</td>
                                     <td>
                                         <div>
-                                            <a class="btn btn-primary" href="{{ action('Admin\AppointmentController@detail', ['email' => $appointment->user_email]) }}">詳細</a>
+                                            <a class="btn btn-primary" href="{{ action('Admin\AppointmentController@detail', ['id' => $appointment->id]) }}">詳細</a>
                                         </div>
                                     </td>
                                 </tr>
