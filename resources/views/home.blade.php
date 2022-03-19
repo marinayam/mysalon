@@ -31,7 +31,7 @@
                               $option = count($appointment->options) ? $appointment->options->first()->option : "";
                             @endphp
                                 <tr>
-                                    <th>{{ $appointment->date }}</th>
+                                    <td>{{ $appointment->date }}</td>
                                     <td>{{ \Str::limit($appointment->time, 100) }}</td>
                                     <td>{{ \Str::limit($perm, 15) }}</td>
                                     <td>{{ \Str::limit($extension, 15) }}</td>

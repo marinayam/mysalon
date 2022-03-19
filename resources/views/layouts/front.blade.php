@@ -38,21 +38,21 @@
         <div class="app">
             <header class="container-fluid sticky-top">
                 {{-- ナビゲーション開始 --}}
-                <nav class="navbar navbar-expand-lg navbar-light" style=background-color: #e3f2fd;">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     {{-- ヘッダーのロゴ --}}
-                    <a class="navbar-brand" href={{ route('/') }}><img class="img-fluid" src="{{asset('images/logo.png')}}" width="180px"></a>
+                    <a class="navbar-brand" href="{{ route('/') }}"><img class="img-fluid" src="{{asset('images/logo.png')}}" width="180px"></a>
                     {{-- メニューバーアイコン --}}
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         {{-- 左に表示させるメニュー --}}
                         <ul class="navbar-nav mr-auto">　
                             <li class="nav-item">
-                                <a class="nav-link-appoint" href={{ route('appointment.create') }}>ご予約</a>
+                                <a class="nav-link-appoint" href="{{ route('appointment.create') }}">ご予約</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link-karte" href={{ route('chart.create') }}>カルテ記入</a>
+                                <a class="nav-link-karte" href="{{ route('chart.create') }}">カルテ記入</a>
                             </li>
                         </ul>
                         {{-- 右に表示させるメニュー --}}
@@ -63,14 +63,14 @@
                                 </a>
                                 {{-- ドロップメニュー --}}
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href={{ route('perm') }}>パーマ</a>
-                                    <a class="dropdown-item" href={{ route('extension') }}>マツエク</a>
-                                    <a class="dropdown-item" href={{ route('eyebrow') }}>美眉スタイリング</a>
+                                    <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
+                                    <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
+                                    <a class="dropdown-item" href="{{ route('eyebrow') }}">美眉スタイリング</a>
                                 </div>
                             </li>
                             {{-- ナビゲーション --}}
                             <li class="nav-item">
-                              <a class="nav-link" href={{ route('service') }}>初めての方へ</a>
+                              <a class="nav-link" href="{{ route('service') }}">初めての方へ</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="https://www.instagram.com/lys.kichijoji/?r=nametag">Instagram</a>
@@ -79,10 +79,10 @@
                               <a class="nav-link" href="https://beauty.hotpepper.jp/kr/slnH000540479/blog/">Blog</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href={{ route('staff') }}>Staff</a>
+                              <a class="nav-link" href="{{ route('staff') }}">Staff</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href={{ route('contact.create') }}>Contact</a>
+                              <a class="nav-link" href="{{ route('contact.create') }}">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto">
@@ -105,10 +105,9 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
@@ -135,19 +134,19 @@
                                         </a>
                                         {{-- ドロップメニュー --}}
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href={{ route('perm') }}>パーマ</a>
-                                            <a class="dropdown-item" href={{ route('extension') }}>マツエク</a>
-                                            <a class="dropdown-item" href={{ route('eyebrow') }}>眉デザイン</a>
+                                            <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
+                                            <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
+                                            <a class="dropdown-item" href="{{ route('eyebrow') }}">眉デザイン</a>
                                         </div>
-                                        <li><a href={{ route('service') }}>はじめての方へ</a>
+                                        <li><a href="{{ route('service') }}">はじめての方へ</a>
                                         </li>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href={{ route('perm') }}>パーマ</a>
-                                            <a class="dropdown-item" href={{ route('extension') }}>マツエク</a>
-                                            <a class="dropdown-item" href={{ route('eyebrow') }}>眉デザイン</a>
+                                            <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
+                                            <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
+                                            <a class="dropdown-item" href="{{ route('eyebrow') }}">眉デザイン</a>
                                         </div>
                                     </li>
-                                    <li><a href={{ route('staff') }}>Staff</a>
+                                    <li><a href="{{ route('staff') }}">Staff</a>
                                     </li>
                                 </ul>
                             </div>
@@ -180,7 +179,7 @@
                                     <li>
                                         <a href="https://beauty.hotpepper.jp/kr/slnH000540479/blog/">ブログへ</a>
                                     </li>
-                                    <a class="nav-link" href={{ route('contact.create') }}>
+                                    <a class="nav-link" href="{{ route('contact.create') }}">
                                         <button type="button" class="btn btn-outline-dark">お問い合わせはこちら</button>
                                     </a>
                                 </ul>
