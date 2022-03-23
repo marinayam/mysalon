@@ -128,21 +128,27 @@
                         <div class="row">
                             <div class="col-md-4 footer-menu">
                                 <p class="footer-title">ABOUT</p>
-                                <ul class="navbar-nav">
+                                <div class="collapse navbar-collapse" id="navbar">
+                                <ul class="navbar-nav mr-auto">
                                     <li class="footer-nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-expanded="false">
+                                      <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-expanded="false">
                                             Menu
                                         </a>
                                         {{-- ドロップメニュー --}}
+                                        
                                         <div class="dropdown-menu" aria-labelledby="dropdown">
-                                            <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
-                                            <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
-                                            <a class="dropdown-item" href="{{ route('eyebrow') }}">眉デザイン</a>
-                                        </div>
+                                    <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
+                                    <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
+                                    <a class="dropdown-item" href="{{ route('eyebrow') }}">美眉スタイリング</a>
+                                </div>
+                                </li>
+                                        
                                         <li><a href="{{ route('service') }}">はじめての方へ</a></li>
                                         <li><a href="{{ route('staff') }}">Staff</a></li>
-                                        </li>
+                                        
                                 </ul>
+                                </div>
+                                </div>
                             </div>
                             <div class="col-md-4 footer-menu">
                                 <p class="footer-title">CONTACT</p>
