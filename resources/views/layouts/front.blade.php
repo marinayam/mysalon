@@ -130,25 +130,18 @@
                                 <p class="footer-title">ABOUT</p>
                                 <ul class="navbar-nav">
                                     <li class="footer-nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-expanded="false">
                                             Menu
                                         </a>
                                         {{-- ドロップメニュー --}}
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <div class="dropdown-menu" aria-labelledby="dropdown">
                                             <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
                                             <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
                                             <a class="dropdown-item" href="{{ route('eyebrow') }}">眉デザイン</a>
                                         </div>
-                                        <li><a href="{{ route('service') }}">はじめての方へ</a>
+                                        <li><a href="{{ route('service') }}">はじめての方へ</a></li>
+                                        <li><a href="{{ route('staff') }}">Staff</a></li>
                                         </li>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
-                                            <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
-                                            <a class="dropdown-item" href="{{ route('eyebrow') }}">眉デザイン</a>
-                                        </div>
-                                    </li>
-                                    <li><a href="{{ route('staff') }}">Staff</a>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="col-md-4 footer-menu">
@@ -162,7 +155,7 @@
                                        エルドラド吉祥寺304
                                        <br>
                                        <br>
-                                       Email: xxx@gmail.com
+                                       Email: info.lys.kichijoji@gmail.com
                                        <br>
                                        LINE: @250ootex
                                     </li>
