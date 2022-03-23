@@ -38,17 +38,18 @@
         <div class="app">
             <header class="container-fluid sticky-top">
                 {{-- ナビゲーション開始 --}}
+                
                 <nav class="navbar navbar-expand-lg navbar-light">
                     {{-- ヘッダーのロゴ --}}
                     <a class="navbar-brand" href="{{ route('/') }}"><img class="img-fluid" src="{{asset('images/logo.png')}}" width="180px"></a>
                     {{-- メニューバーアイコン --}}
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse" id="navbar">
                         {{-- 左に表示させるメニュー --}}
                         <ul class="navbar-nav mr-auto">　
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link-appoint" href="{{ route('appointment.create') }}">ご予約</a>
                             </li>
                             <li class="nav-item">
@@ -56,20 +57,20 @@
                             </li>
                         </ul>
                         {{-- 右に表示させるメニュー --}}
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="dropdown" role="button" data-toggle="dropdown" aaria-expanded="false">
                                     Menu
                                 </a>
                                 {{-- ドロップメニュー --}}
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="dropdown">
                                     <a class="dropdown-item" href="{{ route('perm') }}">パーマ</a>
                                     <a class="dropdown-item" href="{{ route('extension') }}">マツエク</a>
                                     <a class="dropdown-item" href="{{ route('eyebrow') }}">美眉スタイリング</a>
                                 </div>
                             </li>
                             {{-- ナビゲーション --}}
-                            <li class="nav-item">
+                            <li class="nav-item active">
                               <a class="nav-link" href="{{ route('service') }}">初めての方へ</a>
                             </li>
                             <li class="nav-item">
