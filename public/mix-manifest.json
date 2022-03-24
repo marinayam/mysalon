@@ -10,5 +10,6 @@
     "/css/match.css": "/css/match.css",
     "/css/service.css": "/css/service.css",
     "/css/staff.css": "/css/staff.css",
-    "/css/appointment.css": "/css/appointment.css"
+    "/css/appointment.css": "/css/appointment.css",
+    "/css/home.css": "/css/home.css"
 }

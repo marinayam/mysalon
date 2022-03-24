@@ -37325,38 +37325,9 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component"),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              ),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('div',{staticClass:"row justify-content-center"},[_c('div',{staticClass:"col-md-8"},[_c('div',{staticClass:"card"},[_c('div',{staticClass:"card-header"},[_vm._v("Example Component")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_vm._v("\n                    I'm an example component.\n                ")])])])])])}]
 render._withStripped = true
-
 
 
 /***/ }),
@@ -49809,6 +49780,17 @@ jQuery(function ($) {
 
 /***/ }),
 
+/***/ "./resources/sass/home.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/home.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/index.scss":
 /*!***********************************!*\
   !*** ./resources/sass/index.scss ***!
@@ -49865,25 +49847,26 @@ jQuery(function ($) {
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/js/jquery.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/front.scss ./resources/sass/chart.scss ./resources/sass/contact.scss ./resources/sass/index.scss ./resources/sass/menu.scss ./resources/sass/match.scss ./resources/sass/service.scss ./resources/sass/staff.scss ./resources/sass/appointment.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/js/jquery.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/front.scss ./resources/sass/chart.scss ./resources/sass/contact.scss ./resources/sass/index.scss ./resources/sass/menu.scss ./resources/sass/match.scss ./resources/sass/service.scss ./resources/sass/staff.scss ./resources/sass/appointment.scss ./resources/sass/home.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/js/jquery.js */"./resources/js/jquery.js");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/admin.scss */"./resources/sass/admin.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/front.scss */"./resources/sass/front.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/chart.scss */"./resources/sass/chart.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/contact.scss */"./resources/sass/contact.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/index.scss */"./resources/sass/index.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/menu.scss */"./resources/sass/menu.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/match.scss */"./resources/sass/match.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/service.scss */"./resources/sass/service.scss");
-__webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/staff.scss */"./resources/sass/staff.scss");
-module.exports = __webpack_require__(/*! /home/mu/webroot/S9_Yamada/mysalon/resources/sass/appointment.scss */"./resources/sass/appointment.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/js/jquery.js */"./resources/js/jquery.js");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/admin.scss */"./resources/sass/admin.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/front.scss */"./resources/sass/front.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/chart.scss */"./resources/sass/chart.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/contact.scss */"./resources/sass/contact.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/menu.scss */"./resources/sass/menu.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/match.scss */"./resources/sass/match.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/service.scss */"./resources/sass/service.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/staff.scss */"./resources/sass/staff.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/appointment.scss */"./resources/sass/appointment.scss");
+module.exports = __webpack_require__(/*! /home/ec2-user/environment/mysalon/resources/sass/home.scss */"./resources/sass/home.scss");
 
 
 /***/ })

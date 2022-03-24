@@ -2,9 +2,10 @@
 @section('title', '予約情報の詳細')
 @section('content')
     <div class="container">
+      <div class="home-in-detail">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>予約情報の詳細</h2>
+                <h4>予約情報の詳細</h4>
                 <form action="{{ action('HomeController@detail') }}" method="get" enctype="multipart/form-data">
                     <hr color="#c0c0c0">
                     @if (count($errors) > 0)
@@ -76,12 +77,13 @@
                     <div class="form-group row">
                         <div class="col-md-10">
                             <div class="return-btn">
-                                <a class="btn btn-primary" href={{ route('home') }}>一覧へもどる</a>
+                                <a class="btn" href={{ route('home') }}>一覧へもどる</a>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+        </div>
         </div>
     </div>
 @endsection

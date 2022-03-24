@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*予約履歴確認*/
+.home-in {
+  color: #8e7757;
+  background-color: #fff;
+  margin: 50px;
+}
+/*テーブル設定*/
+.table{
+    color: #2b0000;
+    
+}
+
+@media screen and (max-width: 768px) {
+.home-in {
+  color: #8e7757;
+  background-color: #fff;
+  margin: 10px;
+  font-size:12px;
+}}
+/*詳細画面*/
+@media screen and (max-width: 768px) {
+.home-in-detail h2{
+  color: #8e7757;
+  background-color: #fff;
+  margin: 10px;
+}}
+
+/*詳細のボタン*/
+.btn {
+  color: #8e7757;
+  background-color: #fff;
+  border-color: #8e7757;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #8e7757;
+  border-color: #8e7757;
+}
+
+@media screen and (max-width: 768px) {
+.home-in a {
+  color: #8e7757;
+  background-color: #fff;
+  font-size:10px;
+  border-color: #8e7757;
+}}

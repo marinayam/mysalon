@@ -22,4 +22,5 @@ mix.js(['resources/js/app.js', 'resources/js/jquery.js'],'public/js')
     .sass('resources/sass/match.scss', 'public/css')
     .sass('resources/sass/service.scss', 'public/css')
     .sass('resources/sass/staff.scss', 'public/css')
-    .sass('resources/sass/appointment.scss', 'public/css');
+    .sass('resources/sass/appointment.scss', 'public/css')
+    .sass('resources/sass/home.scss', 'public/css');

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4    Pro W3", "\30D2\30E9\30AE\30CE\89D2\30B4    Pro W6", "Noto Sans JP", "\30E1\30A4\30EA\30AA", "Meiryo", Arial, sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4      Pro W3", "\30D2\30E9\30AE\30CE\89D2\30B4      Pro W6", "Noto Sans JP", "\30E1\30A4\30EA\30AA", "Meiryo", Arial, sans-serif;
   /* font-family: "Yu Mincho", "游明朝", "游明朝体", " Hiragino Mincho ProN", "ヒラギノ明朝 ProN", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro", "MS Mincho", "ＭＳ 明朝", " MS PMincho", "ＭＳ Ｐ明朝", "Sawarabi Mincho"; */
   /* font-family: 'Roboto', sans-serif; */
   background-color: #fff;
@@ -37,15 +37,16 @@ ul li {
   display: inline-block;
   border-radius: 5px;
 }
+
 @media screen and (max-width: 820px) {
   .nav-link-appoint {
-  padding: 5px 18px;
-  position: relative;
-  background-color: #977119;
-  color: #fff;
-  display: inline-block;
-  border-radius: 4px;
-}
+    padding: 5px 18px;
+    position: relative;
+    background-color: #977119;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+  }
 }
 
 .nav-link-appoint:hover {
@@ -69,13 +70,13 @@ ul li {
 
 @media screen and (max-width: 820px) {
   .nav-link-karte {
-  padding: 5px 18px;
-  position: relative;
-  background-color: #A0522D;
-  color: #fff;
-  display: inline-block;
-  border-radius: 5px;
-}
+    padding: 5px 18px;
+    position: relative;
+    background-color: #A0522D;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+  }
 }
 
 .nav-link-karte:hover {
@@ -94,13 +95,14 @@ ul li {
   font-size: 16px;
   padding: 10px 4px;
 }
+
 @media screen and (max-width: 820px) {
   .nav-item {
-  display: block;
-  align-items: center;
-  font-size: 16px;
-  padding: 10px 4px;
-}
+    display: block;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 4px;
+  }
 }
 
 /*ナビゲーション終了*/
@@ -138,6 +140,14 @@ footer {
   padding-bottom: 50px;
 }
 
+/*フッターリスト文字色*/
+
+.footer-menu a:hover {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 /*フッターのタイトル設定*/
 
 .footer-title {
@@ -170,20 +180,24 @@ footer {
   margin-top: 30px;
   font-size: 14px;
 }
+
 /*フッター終了*/
+
 /*ログイン*/
-.links p{
-  color:#007bff;
+
+.links p {
+  color: #007bff;
 }
 
 @media screen and (max-width: 768px) {
-  .links{
+  .links {
     font-size: 12px;
   }
 }
+
 .example {
   font-size: 12px;
 }
-/*ログイン終了*/
 
+/*ログイン終了*/
 
