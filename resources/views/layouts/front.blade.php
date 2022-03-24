@@ -70,7 +70,7 @@
                                 </div>
                             </li>
                             {{-- ナビゲーション --}}
-                            <li class="nav-item active">
+                            <li class="nav-item">
                               <a class="nav-link" href="{{ route('service') }}">初めての方へ</a>
                             </li>
                             <li class="nav-item">
