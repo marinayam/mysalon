@@ -8,15 +8,15 @@
                 @foreach($posts as $post)
                     <div class="post">
                         <div class="row">
-                            <div class="text col-md-6">
+                            <div class="text col-md-12">
                                 <div class="name">
                                     {{ str_limit($post->name, 150) }}
                                 </div>
-                                <div class="body mt-3">
+                                <div class="body mt-6">
                                     {{ str_limit($post->body, 1500) }}
                                 </div>
                             </div>
-                            <div class="image col-md-6 text-right mt-4">
+                            <div class="image col-md-12 text-right mt-6">
                                 @if ($post->image_path)
                                     <img src="{{ asset('storage/image/' . $post->image_path) }}">
                                 @endif
