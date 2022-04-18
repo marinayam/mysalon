@@ -14,7 +14,7 @@ class AdminTableSeeder extends Seeder
         \DB::table('admins')->insert([
             'name' => 'marina',
             'email' => 'aaa@bbb.com',
-            'password' => Hash::make('12345678'),
+            'password' => Hash::make('aaa'),
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             
