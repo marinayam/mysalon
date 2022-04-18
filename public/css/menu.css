@@ -3,6 +3,7 @@
 body {
   color: #8e7757;
   background-color: #fff;
+  font-size: 16px;
 }
 
 a {
@@ -23,6 +24,18 @@ a {
   .menu-container {
     padding: 10px 0 0;
   }
+}
+
+.btn {
+  color: #8e7757;
+  background-color: #fff;
+  border-color: #8e7757;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #8e7757;
+  border-color: #8e7757;
 }
 
 /*ページトップの画像　開始*/
