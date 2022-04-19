@@ -107,7 +107,7 @@ class AppointmentController extends Controller
             $appointment->eyebrows()->sync($eyebrows);
             $appointment->options()->sync($options);
     
-          return redirect('admin/salon/index');
+          return redirect('admin/salon/appointment?id=' . $appointment->id);
         }
 }
 
