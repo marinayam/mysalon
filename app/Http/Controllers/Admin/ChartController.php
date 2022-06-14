@@ -51,4 +51,10 @@ class ChartController extends Controller
   
           return redirect('admin/salon/chart?id=' . $chart->id);
         }
+    public function delete(Request $request)
+    {
+     $chart = Chart::find($request->id);
+     $chart->delete();
+     return redirect('admin/salon/');
+    }
 }
