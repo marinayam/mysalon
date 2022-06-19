@@ -57,9 +57,6 @@
                                         <div>
                                             <a class="btn btn-primary" href="{{ action('Admin\AppointmentController@detail', ['id' => $appointment->id]) }}">詳細</a>
                                         </div>
-                                        <div>
-                                            <a class="btn btn-primary" href="{{ action('Admin\AppointmentController@delete', ['id' => $appointment->id]) }}">削除</a>
-                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

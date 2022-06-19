@@ -81,6 +81,9 @@
                         <div class="btn-group ml-auto">
                           <a class="btn btn-secondary" href="{{ action('Admin\AppointmentController@edit', ['id' => $appointment->id]) }}">編集</a>
                        </div>
+                       <div class="btn-group ml-auto">
+                          <a class="btn btn-danger" href="{{ action('Admin\AppointmentController@delete', ['id' => $appointment->id]) }}">削除</a>
+                       </div>
                       </div>
                     </div>
                 </form>

@@ -57,7 +57,7 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <a class="btn btn-secondary" href="{{ action('Admin\UserController@remove', ['id' => $user->id]) }}">削除</a>
+                                            <a class="btn btn-danger" href="{{ action('Admin\UserController@remove', ['id' => $user->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>
