@@ -43,7 +43,7 @@ class User extends Authenticatable
     public function appointments(){
         return $this->hasMany('App\Appointment');
     }
-    public function charts(){
+    public function chart(){
         return $this->hasOne('App\Chart');
     }
     

@@ -109,5 +109,12 @@ class AppointmentController extends Controller
     
           return redirect('admin/salon/appointment?id=' . $appointment->id);
         }
+  // 削除
+  public function delete(Request $request)
+    {
+        $appointment = Appointment::find($request->id);
+        $appointment->delete();
+        return redirect('admin/salon/index');
+    }
 }
 

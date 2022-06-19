@@ -42,4 +42,15 @@ class UserController extends Controller
         }
         return redirect('admin/appointment/index?user_id=' . $user->id);
     }
+    public function remove(Request $request)
+    {
+        $user= User::find($request->id);
+        if (empty($user)) {
+            abort(404);    
+        }
+        $user->chart->delete();
+        Appointment::where('user_id', $user->id)->delete();
+        $user->delete();
+        return redirect('admin/salon/index');
+    }
 }

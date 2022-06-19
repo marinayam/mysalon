@@ -88,12 +88,14 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   Route::get('salon/index', 'Admin\UserController@index')->name('index');
   Route::get('salon/chart', 'Admin\UserController@chart')->name('admin.chart.index');
   Route::get('salon/appointment', 'Admin\UserController@appointment')->name('admin.appointment.index');
+  Route::get('salon/user/remove', 'Admin\UserController@remove')->name('admin.user.remove');
 
   // カルテ顧客情報
   Route::get('chart/index', 'Admin\ChartController@index')->name('admin.chart.index');
   Route::get('chart/detail', 'Admin\ChartController@detail');
   Route::get('chart/edit', 'Admin\ChartController@edit');
   Route::post('chart/edit', 'Admin\ChartController@update');
+  Route::post('chart/edit', 'Admin\ChartController@delete');
 
   // カルテのご来店きっかけ編集
   Route::get('trigger/create', 'Admin\TriggerController@add');
@@ -117,6 +119,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   Route::get('appointment/detail', 'Admin\AppointmentController@detail')->name('admin.appointment.detail');;
   Route::get('appointment/edit', 'Admin\AppointmentController@edit');
   Route::post('appointment/edit', 'Admin\AppointmentController@update');
+  Route::get('appointment/delete', 'Admin\AppointmentController@delete');
 
   // パーマメニュー編集
   Route::get('perm/create', 'Admin\PermController@add');

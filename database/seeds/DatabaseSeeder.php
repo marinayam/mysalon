@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
       // $this->call(ChartTableSeeder::class);
       // $this->call(AppointmentTableSeeder::class);
       $this->call(AdminTableSeeder::class);
-      
+      \DB::table('users')->truncate();
       \DB::table('users')->insert([
         [
           'kanji_name' => '山田花子',
@@ -66,6 +66,7 @@ class DatabaseSeeder extends Seeder
       $dates = ['2022-02-01','2022-02-02','2022-02-03','2022-02-04'];
       $times = ['09:00','10:00','11:00','12:00'];
       $comments = ['おはよう','こんにちは','こんばんは','2回目'];
+      \DB::table('appointments')->truncate();
       for ($i = 0; $i < count($user_ids); $i++) {
         \DB::table('appointments')->insert([
           'user_id' => $user_ids[$i],
@@ -79,6 +80,7 @@ class DatabaseSeeder extends Seeder
       
       
       //まつ毛パーマ予約
+      \DB::table('appointment_perm')->truncate();
       \DB::table('appointment_perm')->insert([
         [
           'appointment_id' => '1',
@@ -88,6 +90,7 @@ class DatabaseSeeder extends Seeder
       
       
       // マツエク予約
+      \DB::table('appointment_extension')->truncate();
       \DB::table('appointment_extension')->insert([
         [
           'appointment_id' => '2',
@@ -96,6 +99,7 @@ class DatabaseSeeder extends Seeder
       ]);
       
       // 眉予約
+      \DB::table('appointment_eyebrow')->truncate();
       \DB::table('appointment_eyebrow')->insert([
         [
           'appointment_id' => '3',
@@ -104,6 +108,7 @@ class DatabaseSeeder extends Seeder
       ]);
       
       // オプション予約
+      \DB::table('appointment_option')->truncate();
       \DB::table('appointment_option')->insert([
         [
           'appointment_id' => '4',
@@ -112,6 +117,7 @@ class DatabaseSeeder extends Seeder
       ]);
       
       // 来店きっかけ
+      \DB::table('chart_trigger')->truncate();
       \DB::table('chart_trigger')->insert([
         [
           'chart_id' => '3',
@@ -119,6 +125,7 @@ class DatabaseSeeder extends Seeder
         ],
       ]);
       
+      \DB::table('charts')->truncate();
       $user_ids = ['1','2','3'];
       $birthdays = ['1996-01-01','1996-02-02','1996-03-03'];
       $zips = ['180-0001','180-0002','180-0003'];

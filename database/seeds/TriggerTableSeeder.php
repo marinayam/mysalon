@@ -11,6 +11,7 @@ class TriggerTableSeeder extends Seeder
      */
     public function run()
     {
+        \DB::table('triggers')->truncate();
         $triggers = ['ホームページ','ホットペッパービューティー','Instagram','ブログ','ご友人からのご紹介','その他'];
         foreach ($triggers as $trigger) {
             DB::table('triggers')->insert(['trigger' => $trigger]);

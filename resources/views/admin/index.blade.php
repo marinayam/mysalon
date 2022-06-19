@@ -27,11 +27,14 @@
                     <table class="table table-dark">
                         <thead>
                             <tr>
-                                <th width="1%">ID</th>
-                                <th width="16%">名前</th>
-                                <th width="16%">なまえ</th>
-                                <th width="20%">tel</th>
+                                <th width="6%">ID</th>
+                                <th width="15%">名前</th>
+                                <th width="15%">なまえ</th>
+                                <th width="16%">tel</th>
                                 <th width="20%">email</th>
+                                <th width="12%">カルテ</th>
+                                <th width="8%">予約</th>
+                                <th width="8%">削除</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,9 +49,15 @@
                                         <div>
                                             <a class="btn btn-primary" href="{{ action('Admin\UserController@chart', ['id' => $user->id]) }}">カルテ</a>
                                         </div>
-                                        <br>
+                                    </td>
+                                    <td>
                                         <div>
                                             <a class="btn btn-secondary" href="{{ action('Admin\UserController@appointment', ['id' => $user->id]) }}">予約</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a class="btn btn-secondary" href="{{ action('Admin\UserController@remove', ['id' => $user->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

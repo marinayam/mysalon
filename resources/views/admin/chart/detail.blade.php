@@ -106,9 +106,6 @@
                             <div class="btn-group ml-auto">
                                 <a class="btn btn-secondary" href="{{ action('Admin\ChartController@edit', ['id' => $chart_form->id]) }}">編集</a>
                             </div>
-                            <div class="btn-group ml-auto">
-                                <a class="btn btn-secondary" href="{{ action('Admin\ChartController@delete', ['id' => $chart_form->id]) }}">削除</a>
-                            </div>
                         </div>
                     </div>
                 </form>
