@@ -11,15 +11,7 @@ class AdminTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('admins')->truncate();
-        \DB::table('admins')->insert([
-            'name' => 'marina',
-            'email' => 'aaa@bbb.com',
-            'password' => Hash::make('aaa'),
-            'created_at' => new DateTime(),
-            'updated_at' => new DateTime(),
-            
-          ]);
+        
     }
     
 }
