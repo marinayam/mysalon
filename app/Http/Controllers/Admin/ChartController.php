@@ -22,7 +22,7 @@ class ChartController extends Controller
         }
         return view('admin.chart.detail', ['chart_form' => $chart]);
     }
-    //クライエント情報の編集画面
+    //クライアント情報の編集画面
     public function edit(Request $request)
     {
         // Chart Modelからデータを取得する
@@ -41,6 +41,11 @@ class ChartController extends Controller
           //  Modelからデータを取得する
           $chart = Chart::find($request->id);
           // 送信されてきたフォームデータを格納する
+          if (empty($chart)) {
+            abort(404);    
+        }
+          $selected_triggers=$chart->triggers()->pluck("id")->toArray();
+          $triggers=Trigger::all();
           $chart_form = $request->all();
           $triggers = $chart_form['trigger'];
           unset($chart_form['_token']);
@@ -48,7 +53,7 @@ class ChartController extends Controller
           $chart->fill($chart_form);
           $chart->save();
           $chart->triggers()->sync($triggers);
-  
+          
           return redirect('admin/salon/chart?id=' . $chart->id);
         }
     

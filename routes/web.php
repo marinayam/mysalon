@@ -94,7 +94,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
   Route::get('chart/index', 'Admin\ChartController@index')->name('admin.chart.index');
   Route::get('chart/detail', 'Admin\ChartController@detail');
   Route::get('chart/edit', 'Admin\ChartController@edit');
-  Route::post('chart/edit', 'Admin\ChartController@update');
+  Route::post('chart/edit', 'Admin\ChartController@edit');
+  Route::get('chart/update', 'Admin\ChartController@update');
+  Route::post('chart/update', 'Admin\ChartController@update');
   Route::post('chart/edit', 'Admin\ChartController@delete');
 
   // カルテのご来店きっかけ編集
