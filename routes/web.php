@@ -85,7 +85,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 
   // 最初のページ
   // Route::get('salon/index', 'Admin\SalonController@index')->name('index');
-  Route::get('salon/index', 'Admin\UserController@index')->name('index');
+  Route::get('lys-salon/index', 'Admin\UserController@index')->name('index');
   Route::get('salon/chart', 'Admin\UserController@chart')->name('admin.chart.index');
   Route::get('salon/appointment', 'Admin\UserController@appointment')->name('admin.appointment.index');
   Route::get('salon/user/remove', 'Admin\UserController@remove')->name('admin.user.remove');
